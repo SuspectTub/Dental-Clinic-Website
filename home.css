@@ -1,0 +1,711 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    background-image: url(website-images/main-bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wave {
+    position: absolute;
+}
+
+
+
+/* -------------------------MAIN WELCOME HOME------------------------- */
+
+
+
+
+
+
+/* welcome home buttons */
+.button-5 {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: rgb(49, 179, 222, 1);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+    background-color: #325dfb;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+    transform: translateY(-1px);
+}
+
+.button-5:active {
+    background-color: #0049c8;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+.appoint-btn {
+    align-items: center;
+    appearance: none;
+    background-color: rgb(157, 207, 255);
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3d6fbb 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 80px;
+    width: 300px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    z-index: 0  ;
+}
+
+.appoint-btn:focus {
+    box-shadow: #252576 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3d6fbb 0 -3px 0 inset;
+}
+
+.appoint-btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3d6fbb 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.appoint-btn:active {
+    box-shadow: #11112a 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.appointment-section
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #84cddc;
+}
+
+.appointment-button {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    color: #18181a;
+    display: inline-block;
+    font-size: 18.5px;
+    font-weight: 500;
+    line-height: 15px;
+    padding: 35px 80px 40px;
+    text-decoration: none;
+    cursor: pointer;
+    background: rgb(157, 207, 255);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.appointment-button span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+}
+
+.appointment-button span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+}
+
+.appointment-button:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0049c8;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+}
+
+.appointment-button:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+}
+
+.appointment-button:hover span:last-child {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+
+
+
+.header-logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    position: relative;
+    left: 30px;
+}
+
+.website-header
+{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    background-color: #9bcdff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.title-cruzNery
+{
+    font-size: 150px;
+    text-align: center;
+
+}
+
+.title-dentalClinic
+{
+    font-size: 60px;
+    text-align: center;
+}
+
+.logongdentalclinic
+{
+    position: inherit;
+    left: 50px;
+    width: 10%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lalagyanngbuttons
+{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    left: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.namengclinicsaheader
+{
+    position: absolute;
+    width: 20%;
+    height: 10vh;
+    left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+}
+
+.buttonsaheader
+{
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(185, 255, 248);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.buttonsaheader:hover
+{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(157, 207, 255);
+    font-size: 1.05em;
+}
+
+.invisheader
+{
+    width: 100%;
+    height: 10vh;
+}
+
+.homescreen1
+{
+    width: 100%;
+    height: 30vh;
+    background-color: #a8d6ff;
+}
+
+.homescreen2
+{
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient( to bottom right, rgba(255, 255, 255, 0.5) 30%, rgba(50, 50, 255, 0) 50%, rgba(255, 255, 255, 0.5) 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homescreen3
+{
+    width: 100%;
+    height: 40vh;
+    background-color: #84cddc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* -------------------------DETAIL SECTION------------------------- */
+
+
+
+
+
+
+.details-parentdiv
+{
+    height: 80vh;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-subparent1
+{
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.details-subparent2
+{
+    display: inline-block;
+}
+
+.details-son
+{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 35px;
+    color: rgb(187, 255, 255);
+}
+
+.details-son:hover
+{
+    transform: scale(1.05);
+}
+
+.details-subparent1
+{
+    overflow-x: auto;
+}
+
+.details-subparent1::-webkit-scrollbar
+{
+    display: none;
+}
+
+.details-subparent1 {
+    overflow: hidden !important;
+}
+
+.details-subparent1
+{
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    transition: scroll 0.2s ease-in-out;
+}
+
+
+.details-background-picture1 {
+    background-image: url(details-images/pic1.jpg);
+}
+.details-background-picture2  {
+    background-image: url(details-images/pic2.jpg);
+}
+.details-background-picture3 {
+    background-image: url(details-images/pic3.jpg);
+}
+.details-background-picture4 {
+    background-image: url(details-images/pic4.jpg);
+}
+.details-background-picture5 {
+    background-image: url(details-images/pic5.jpg);
+}
+.details-background-picture6 {
+    background-image: url(details-images/pic6.jpg);
+}
+.details-background-picture7 {
+    background-image: url(details-images/pic7.jpg);
+}
+.details-background-picture8 {
+    background-image: url(details-images/pic8.jpg);
+}
+.details-background-picture9 {
+    background-image: url(details-images/pic9.jpg);
+}
+.details-background-picture10 {
+    background-image: url(details-images/pic10.jpg);
+}
+.details-background-picture11 {
+    background-image: url(details-images/pic11.jpg);
+}
+
+
+
+
+
+
+/* -------------------------contact-section------------------------- */
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+font-family: Open Sans;
+}
+
+section {
+    width: 100%;
+    display: inline-block;
+    background: #333;
+    height: 50vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.footer-distributed{
+    background: rgba(101, 133, 163, 0.7);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+    width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span{
+    color:  rgb(92, 255, 247);
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    font-weight:400;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+    width: 35%;
+}
+
+.footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    font-weight:400;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+    color:  rgb(255, 255, 255);
+    text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+    .footer-distributed{
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
+
+}
+
+
+
+
+
+/* -------------------------WINDOW SIZING------------------------- */
+
+
+
+
+
+@media only screen and (max-width: 638px) {
+
+    body {
+        background-attachment: scroll;
+        background-repeat: repeat;
+    }
+    .body {
+        width: 1000px;
+        height: 1000px;
+        margin: 0px;
+        background-image: url(website-images/main-bg.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .homescreen2{
+        background: linear-gradient( to bottom right, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.6) 70%);
+
+    }
+    .title-cruzNery {
+        height: 15vh;
+        font-size: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .title-dentalClinic {
+        font-size: 30px;
+    }
+
+    .logongdentalclinic {
+        font-size: 10px;
+        left: 10px;
+    }
+    .namengclinicsaheader {
+        width: auto;
+        font-size: 10px;
+        left: 15%;
+    }
+
+    .lalagyanngbuttons {
+        width: 0%;
+    }
+
+    .lalagyanngbuttons {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        left: 50%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .button-5 {
+        width: 60px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .namengclinicsaheader {
+        font-size: 8px;
+    }
+}

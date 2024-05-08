@@ -1,0 +1,231 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2596BE;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23007fa6' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.fading-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+/* .blank-end {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+} */
+
+header {
+    background-color: #84cddc;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.invisible-header {
+    width: 100%;
+    height: 121px;
+    background-color: black;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* Add Appointment Form styles */
+#add-appointment {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(102, 206, 227, 1);
+}
+
+#add-appointment h2 {
+    margin-bottom: 20px;
+}
+
+#add-appointment .form-group {
+    margin-bottom: 15px;
+}
+
+#add-appointment label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#add-appointment input[type="text"],
+#add-appointment input[type="number"],
+#add-appointment input[type="date"],
+#add-appointment select,
+#add-appointment textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#add-appointment button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-appointment button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Appointment List styles */
+#appointment-list {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(102, 206, 227, 1);
+}
+
+#appointment-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#appointment-list th,
+#appointment-list td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#appointment-list th {
+    background-color: #84cddc;
+    color: #fff;
+}
+
+/* Reports Section styles */
+#reports {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(102, 206, 227, 1);
+}
+
+/* Add Appointment Form styles */
+#add-appointment {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(102, 206, 227, 1);
+}
+
+#add-appointment h2 {
+    margin-bottom: 20px;
+}
+
+#add-appointment .form-group {
+    margin-bottom: 15px;
+}
+
+#add-appointment label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#add-appointment input[type="text"],
+#add-appointment input[type="number"],
+#add-appointment textarea,
+#add-appointment select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#add-appointment button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-appointment button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Appointment List styles */
+#appointment-list {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(102, 206, 227, 1);
+}
+
+#appointment-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#appointment-list th,
+#appointment-list td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#appointment-list th {
+    background-color: #84cddc;
+    color: #fff;
+}
+
+#appointment-list td button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#appointment-list td button:hover {
+    background-color: #0056b3;
+}
